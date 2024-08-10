@@ -3,8 +3,6 @@ const Discord = require("discord.js");
 exports.run = async (client, message, args) => {
 
 
-        if(!message.member.permissions.has(Discord.PermissionsBitField.Flags.Administrator)) return message.channel.send("Üyeleri Banla Yetkiniz Yok.")
-
 
         let user = message.mentions.users.first();
 
